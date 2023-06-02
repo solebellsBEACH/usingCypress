@@ -21,19 +21,19 @@ export default function UserCard({ user }: { user: User }) {
                 <SimpleGrid columns={[1, 2]} spacing='40px' marginTop={5} marginBottom={5}>
                     <FormControl>
                         <FormLabel>Email address</FormLabel>
-                        <Input value={user["email"]} type='email' />
+                        <Input readOnly value={user["email"]} type='email' />
                     </FormControl>
                     <FormControl>
                         <FormLabel>Phone</FormLabel>
-                        <Input value={user["phone"]} type='tel' />
+                        <Input readOnly value={user["phone"]} type='tel' />
                     </FormControl>
                     <FormControl>
                         <FormLabel>Document</FormLabel>
-                        <Input value={user["document"]} type='text' />
+                        <Input readOnly value={user["document"]} type='text' />
                     </FormControl>
                     <FormControl>
                         <FormLabel>Birthdate</FormLabel>
-                        <Input value={user["birthdate"]} type='date' />
+                        <Input readOnly value={user["birthdate"]} type='date' />
                     </FormControl>
                 </SimpleGrid>
             </CardBody>

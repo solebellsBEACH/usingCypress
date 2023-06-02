@@ -1,7 +1,6 @@
 body{
-    background-color: #a997f8;
+    background-color: #a997f8 !important;
 }
-
 *{
     padding: 0;
     margin: 0;

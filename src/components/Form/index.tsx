@@ -1,6 +1,6 @@
 import React from 'react'
 import './form.css'
-import { FormControl, Grid, FormLabel, Input, FormHelperText, Switch, Heading, Button } from '@chakra-ui/react'
+import { FormControl, Grid, FormLabel, Input, FormHelperText, Switch, Heading, Button, Box, Text, } from '@chakra-ui/react'
 import { User } from '../../App';
 
 interface IFormProps {
@@ -49,7 +49,11 @@ export default function Form({ form, setForm }: IFormProps) {
                 </FormControl>
                 <FormControl>
                     <FormLabel>You have cars ?</FormLabel>
-                    <Switch size='lg' h="40px" onChange={e => { setForm({ ...form, haveCar: e.target.checked }) }} />
+                    <Box h="40px" alignItems='center' display='flex' flexDirection='row'>
+                    <Text>No</Text>
+                        <Switch marginLeft={5} marginRight={5} size='lg' onChange={e => { setForm({ ...form, haveCar: e.target.checked }) }} />
+                        <Text>Yes</Text>
+                    </Box>
                     <FormHelperText>Select if you have a car.</FormHelperText>
                 </FormControl>
             </Grid>

@@ -1,5 +1,5 @@
 describe('Testando formulário', ()=>{
-    before(,() => {
+    before(() => {
         cy.visit("http://localhost:3000/");
       })
     it('Preenchendo Campos', ()=>{
